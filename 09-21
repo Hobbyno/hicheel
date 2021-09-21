@@ -1,0 +1,493 @@
+// let bat = {
+//     ner: "Bat",
+//     tootsoo: [124, 48, 268],
+//     tip: [],
+//     finalBill: [],
+
+// }
+
+// for(let i = 0; i < bat.tootsoo.length; i++){
+//     let percentage = 0;
+//     if(bat.tootsoo[i] <= 50){
+//         percentage = .2;
+//         bat.tip.push(bat.tootsoo[i] * percentage)
+//         bat.finalBill.push(bat.tootsoo[i] + bat.tip[i])
+//     } else if(bat.tootsoo[i] > 50 && bat.tootsoo[i] < 200){
+//         percentage = .15;
+//         bat.tip.push(bat.tootsoo[i] * percentage)
+//         bat.finalBill.push(bat.tootsoo[i] + bat.tip[i])
+//     } else {
+//         percentage = .1;
+//         bat.tip.push(bat.tootsoo[i] * percentage)
+//         bat.finalBill.push(bat.tootsoo[i] + bat.tip[i])
+//     }
+
+// }
+// Primitive Data typeof
+// 1.String
+// 2.Number
+// 3.Boolen
+// 4.undefined
+// 5.null
+
+// Object, Array - Non-Primitive
+
+// Function - Функц гэдэг нь аливаа programmiig burduulj bui bureldehuun heseg.
+
+// Function гэж функцынхаа neriig ogno.
+
+// function myFunction() {
+//     let tursunOn = 2000;
+//     let nas = 2021 - tursunOn;
+//     console.log(nas)
+// }
+
+// function myFunction() {
+//         let tursunOn = 2000;
+//         let nas = 2021 - tursunOn;
+
+//         return nas;
+//     }
+
+//     let x = myFunction();
+
+// Parameter function
+
+// function nasTootsoh(on) {
+// return 2021 - on;
+// }
+
+// let person1 = nasTootsoh(2000);
+// let person2 = nasTootsoh(2001);
+// let person3 = nasTootsoh(1997);
+// let person4 = nasTootsoh(1995);
+
+// Orolt - 1, 0, 5; Garalt: 1
+// Orolt - 5, 3, 1; Garalt: 0
+
+// 1. 3 shirheg too argument helbereer awdag funkts bich.
+// 2. toologch huwisagch uusge.
+// 3. Ehnii toog 0-tei tentsuu esehiig shalgaad, herew tegtei tentsuu bol tooluuriin utgiig negeer nemegduul.
+// 4. 2 dahi toog tegtei tentsuu esehiig shalgaad, herew tegtei tentsuu bol tooluuriin utgiig negeer nemegduul.
+// 5. 3dahi toog tegtei tentsuu esehiig shalgaad , herew tegtei tentsuu bol tooluuriin utgiig negeer nemegduul.
+// 6.Tooluuriin utgiig butsaa.
+
+// function counterZero(a,b,c) {
+//     let counter = 0;
+//     if(a === 0) {
+//         counter++;
+//     }
+//     if(b === 0) {
+//         counter++;
+//     }
+//     if(c === 0) {
+//         counter++;
+//     }
+//     return counter;
+
+// }
+
+// function Tool(a) {
+// return a.toString().lenght
+// }
+// function sumD(num) {
+//     let sum = 0;
+//     for(let i = 0; i < num.toString().lenght; i++){
+//      sum += +num.toString()[i]
+//     }
+//     return sum;
+// }
+
+// function tool(a) {
+//     let tool = 0;
+//     for (let i = 0; i < a.toString().length; i++) {
+//         if (+a.toString()[i] % 2 === 0) {
+//             tool++;
+//         }
+//     }
+//     return tool;
+// }
+
+// function tool(a) {
+//     let tool = 0;
+//     for (let i = 0; i < a.toString().length; i++) {
+//         if (+a.toString()[i] % 3 === 0) {
+//             tool++;
+//         }
+//     }
+//     return tool;
+// }
+
+// function tool(a) {
+    //     let tool = 0;
+    //     for (let i = 0; i < a.toString().length; i++) {
+    //         if (+a.toString()[i] % 2 === 0) {
+    //             tool++ +a.toString()[i];
+    //         }
+    //     }
+    //     return tool;
+    // }
+
+//Palindrom
+
+// function isPalindrom(num) {
+//     return num === +num.toString().split("").reverse().join("");
+// }
+
+//Anhdagch toog
+
+// function isPrime(num) {
+//     let counter = 0;
+//     for(let i = 1; i <= num; i++){
+//         if(num%i === 0) {
+//             counter++;
+//         }
+//     }
+
+//     if(counter === 1 || couunter === 2){
+//         return true
+//     }
+//     return false
+// }
+
+//<======== Callstack - Neg funktsiig, oor funkts dotor duudah
+
+// function printName(ner) {
+//   return ner;
+// }
+// function intro(ner){
+//     return "Sain baina uu... Namaig " + printName(ner) + "gedeg..."
+// }
+
+//<======== Callback - Argument helbereer funkts damjuulah
+
+// function intro(nas){
+//     return "bi" + nas() + " nastai"
+// }
+
+//<======== Recursion - Funktsiig ooriig ni dotor ni duudah
+
+// function printHi(num){
+//     if(num === 0) return;
+//     console.log("Hi");
+//     printHi(num - 1);
+// }
+// //10 
+
+// Garaas too ogogdson bl tuhain too hurtel niilberuudiig 
+
+// function addUpTo(num){
+// if(num === 0){
+//     return num;
+// };
+// return num + addUpTo(num - 1)
+
+// }
+
+
+// factorial - 1*2*3*4*5 = 5!
+
+// function factorial(num){
+//     if(num === 1){
+//         return num;
+//     };
+//     return num * factorial(num - 1)
+// }
+
+
+
+//  <====Dasgal  ====>
+
+// function triangleArea( a, b){
+//     let triArea =  (base * height) / 2;
+
+//     return ("Талбайн хэмжээ: " + triArea);
+// }
+
+
+// let obj = [
+//     {
+//        obj1: true
+//     },
+//     {
+//        obj1: false
+//     },
+//     {
+//        obj1: true
+//     },
+//     {
+//        obj1: true
+//     },
+//     {
+//        obj1: false
+//     }
+//  ]
+//  function counTrue(obj) {
+//     let counter = 0;
+//     for (let i = 0; i < obj.length; i++) {
+//        if (obj[i].obj1 === true) {
+//           counter++;
+//        }
+//     }
+//     return counter;
+//  }
+//  function countFalse(obj) {
+//     let counter = 0;
+//     for (let i = 0; i < obj.length; i++) {
+//        if (obj[i].obj1 === false) {
+//           counter++;
+//        }
+//     }
+//     return counter;
+//  }
+//  console.log("Үнэн гэсэн утга: " + counTrue(obj));
+//  console.log("Худал гэсэн утга: " + countFalse(obj));
+
+
+// let obj = [
+//     {
+//         a: 1
+//     },
+//     {
+//         b: 2
+//     },
+//     {
+//         c: 3
+//     },
+// ]
+
+// function counTrue(obj) {
+//         let counter = 0;
+//         for (let i = 0; i < obj.length; i++) {
+//            if (obj[key[x]] = val[x]) {
+//               counter++;
+//            }
+//         }
+//         return counter;
+//      }
+     
+// console.log (key ["a", "b", "c"]);
+// for (let x = 0; x < key.length; x++){
+//     obj[key[x]] = val[x];
+// }
+
+//                        <===== Dasgal 1 =====>
+
+// function add1(num) {
+//     let sum = 0;
+
+//     for(let i = 1; i <= num; i++) {
+//         sum += 1;
+//     }
+
+//     return sum;
+// }
+
+
+                        // <===== Dasgal 3 =====>
+
+
+    // function countTrue(arr){
+    //     let counter = 0;
+
+    //     for(let i = 0; i < arr.lenght; i++){
+    //         if(arr[i] === true){
+    //             counter ++;
+    //         }
+    //     }
+
+    //     return counter;
+    // }
+
+
+                   // <======== Dasgal 4 =======>
+// for in
+
+
+// let obj = {
+//     ner:"Hobby",
+//     mergejil:"Designer",
+//     nas:21
+// }
+
+// //[["ner", "mergejil", "nas"],[]]
+
+// for(let pro in obj){
+//     console.log(obj[pro])
+// }
+
+// function keysAndVal(obj){
+//     let keys = [];
+//     let vals = [];
+//     for(let pro in obj){
+//         keys.push(pro);
+//         vals.push(obj[pro])
+//     }
+
+//     return [keys, vals];
+// }
+ 
+
+                       // <====== Dasgal 5 =====>
+
+
+//  function createArr(first, len){
+//      let result = [];
+
+//        for(let i = 1; i <= len; i++){
+//        result.push(first * i)
+//        }
+
+//      return result;
+
+//  }
+
+
+                      // <====== Dasgal 6 =====>
+
+
+     //    <==         ... Rest operator       ==>
+
+
+            // let mass = [45 ,65, 32, 148, 12, 59];
+
+
+            // let arr1 =[5, 6, 7, ...mass, 1000, 1111]
+
+
+            // function testRest(...a){
+            //    const arguments = a; // => []
+
+            //    return arguments;
+            // }
+
+
+//    function calculateVols(...box){
+//        const boxes = box;
+//        let sum = 0;
+       
+//        for(let i = 0; i < boxes.length; i++){
+//            let volume = 1;
+//            for(let j = 0; j < boxes[i].lenght; j++)
+//         {
+//            volume *= boxes[i][j]
+//         }
+//         sum += volume;
+//      }
+
+//        return sum;
+
+//    }
+
+
+   //[], [], []
+   //let gg = [[], [], []]
+   //gg[1] = [5, 6, 7, 8];
+   //gg[1][3]
+
+
+                    // <====== Dasgal 7 =====>
+
+
+    //  function add2(arr) {
+    //         let result = 0;
+        
+    //         for(let i = 1; i <= arr.lenght; i++) {
+    //          result += arr[i] * i
+         
+    //         }
+        
+    //         return result;
+    //     }
+        
+
+
+                    // <====== Dasgal 8 =====>
+    
+
+    //    function add3(nums){
+    //         let tegsh = [];
+    //         let sondgoi = [];
+    //         let isEven = true;
+    //         let isOdd = true;
+    //         for(let i = 0; i < nums.lenght; i++) {
+    //             if(i%2 === 0){
+    //                 tegsh.push(arr[i])
+    //             }
+    //             else{
+    //                 sondgoi.push(arr[i])
+    //             }
+    //         }
+    //             for(let j = 0; j < tegsh.lenght; j++){
+    //                 if(tegsh[j]%2 ===  1){
+    //                     isEven = false;
+    //                 }
+    //             }
+    //             for(let k = 0; k < sondgoi.lenght; k++){
+    //                 if(tegsh[k]%2 ===  0){
+    //                     isOdd = false;
+
+    //                 }
+    //    }
+
+
+    //    if(isEven && isOdd){
+    //        return true;
+    //    }
+    // }
+
+                  //  <====== Dasgal 9 =====>
+
+
+        //  function add4(arr){
+        //      let sum = 0;
+
+        //      for(let i = 0; i < arr.lenght; i++){
+        //          if(typeof arr[i] === 'number'){
+        //              sum += arr[i]
+        //          }
+        //      }
+        //      return sum;
+        //  }
+
+
+                 // <====== Dasgal 10 =====>  
+     
+
+           function add5(arr)
+               let result = '';
+               let last = arr[arr.lenght -1] 
+               for(let i = 1; i < arr.lenght -1; i++){
+            result += arr[i]
+                        
+                }
+
+                if(typeof arr[arr.lenght -1])
+                if(result === arr[arr.lenght - 1]){
+                
+                }
+
+           // <====== Dasgal 11 =====>  
+
+
+           function add6(num){
+               let too = num;
+               if(typeof too === "number"){
+                   too = too.toString();
+               }
+               const greaterEven = " tegsh tsifruudiin niilber ni ih"
+               const greaterOdd = " sondgoi tsifruud iin niilber ni ih"
+               const equal = " tentsuu"
+
+               let sumEven = 0;
+               let sumOdd = 0;
+
+               for(let i = 0; i < too.lenght; i++{
+                   if(too[i]%2 === 0){
+                       sumEven += +too[i]
+                   }
+                   else{
+                       sumOdd +=too[i]
+                   }
+
+           }
